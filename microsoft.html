@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MICROSOFT</title>
+    <style>
+        .sidebar{
+            padding: 20px 20px;
+            padding-right: 60px;
+            font-weight: bold;
+            text-align: left;
+            transition: transform 0.3s ease-in;
+        }
+        .sidebarGo{
+        transform: translate(-433px,0px);
+        /* position: absolute; */
+        }  
+
+        .trans{
+            transition: transform 0.3s ease-in;
+        }
+        .dropdown{
+            transform: translate(0px,-500px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar justify-between items-center flex p-4 md:px-12">
+    
+        <div class="flex justify-center items-center  md:order-2">
+
+            <div class="hamburger inline-block cursor-pointer md:hidden z-50">
+                <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                <div class="line h-0.5 w-6 my-1 bg-black "></div>
+                <div class="line h-0.5 w-6 my-1 bg-black "></div>
+            </div>
+            <div class="search md:hidden">
+                <img class="h-6 ml-4" src="search.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="logo ml-2 text-center flex md:order-1">
+
+            <div><img class="h-7" src="logo.png" alt="micro"></div>
+
+            <div class="features bg-gray-200 inset-0 absolute sidebar sidebarGo  space-y-10 md:space-y-0 w-fit md:flex md:mx-5 md:space-x-4 md:static md:w-auto md:bg-white md:translate-x-0 md:font-normal md:p-0">
+
+                <div class="fItem text-lg cursor-pointer hover:underline hover:text-blue-700 hover:font-semibold hover:underline-offset-8 mt-16 md:m-0">Microsoft 365</div>
+                <div class="fItem text-lg cursor-pointer hover:underline hover:text-blue-700 hover:font-semibold hover:underline-offset-8">Teams</div> 
+                <div class="fItem text-lg cursor-pointer hover:underline hover:text-blue-700 hover:font-semibold hover:underline-offset-8">Windows</div>
+                <div class="fItem text-lg cursor-pointer hover:underline hover:text-blue-700 hover:font-semibold hover:underline-offset-8">Surface</div> 
+                <div class="fItem text-lg cursor-pointer hover:underline hover:text-blue-700 hover:font-semibold hover:underline-offset-8">Xbox</div> 
+                <div class="fItem text-lg cursor-pointer hover:underline hover:text-blue-700 hover:font-semibold hover:underline-offset-8">Support</div>
+                
+            </div>
+
+        </div>
+        
+        <div class="cartAndSearch flex text-center md:order-3">
+
+            <div class="all -mt-0.5 hidden md:block mr-6 text-lg cursor-pointer underline underline-offset-8 hover:text-blue-900">
+                All MicroSoft
+            </div>
+
+            <span class=" hidden md:block text-lg cursor-pointer -mt-0.5 hover:underline">Search</span>
+            <img class="hidden md:block h-6 ml-2" src="search.png" alt="">
+
+            <div class="cart flex">
+                <span class="ml-4 hidden md:block text-lg cursor-pointer -mt-0.5 hover:underline">Cart</span>
+                <img class="h-6 ml-1 cursor-pointer" src="cart.png" alt=""> 
+                <img class="h-6 ml-4 cursor-pointer" src="acc.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class=" dropdown trans bg-blue-50 absolute left-[1090px]">
+
+      <div class="droplist">
+
+        <ul class="dropul text-gray-600 font-sans font-semibold">
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">Teams</li>
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">X-box 1</li>
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">X-box 360</li>
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">Excel</li>
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">Powepoint</li>
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">Surface</li>
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">One Drive</li>
+            <li class="dropli hover:underline hover:underline-offset-8 cursor-pointer w-44 ml-10 my-6">Azure</li>
+        </ul>
+
+      </div> 
+
+    </div>
+
+
+
+    <div class="slider pb-4 flex flex-col-reverse md:flex-row md:justify-evenly bg-[#e7ebec] mx-2">
+
+        <div class="left flex flex-col justify-center items-center pt-2 pb-5 md:items-baseline">
+
+            <h1 class="text-4xl mx-5 mb-2 font-semibold md:text-5xl md:mb-5 cursor-pointer">Surface Laptop 5</h1>
+            <p class="w-3/4 mx-5 text-center md:text-left md:text-lg">Table Versatality and Laptop power - all in one ultra-portable device !</p>
+            <button class="text-white bg-black font-sans text-sm px-4 py-2 mt-3 hover:bg-blue-700 md:mx-5 md:mt-4 md:-mb-2">S&ThinSpace;h&ThinSpace;o&ThinSpace;p&ThinSpace;&ThinSpace; N&ThinSpace;o&ThinSpace;w ></button>
+
+        </div>
+
+        <div class="right">
+            <img class="h-80 mx-auto md:h-96" src="img5.jpg" alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="promo mt-2 ml-[8%] space-y-6 flex flex-col md:flex-row md:justify-center md:ml-0">
+
+        <div class="item flex items-center md:flex-col mx-4 mt-5 space-x-2">
+            <img class="mt-1.5 mb-1.5" src="prom1.webp" alt="">
+            <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg ">Choose Your 365</span>
+        </div>
+        <div class="item flex items-center md:flex-col mx-4 space-x-2">
+            <img src="prom2.webp" alt="">
+            <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg mt-2">Explore Surface devices</span>
+        </div>
+        <div class="item flex items-center md:flex-col mx-4 space-x-2">
+            <img src="prom3.webp" alt="">
+            <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg mt-2">Buy X-box Games</span>
+        </div>
+        <div class="item flex items-center md:flex-col mx-4 space-x-2">
+            <img src="prom1.webp" alt="">
+            <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg mt-2">Get Windows 11</span>
+        </div>
+
+    </div>
+
+
+
+    <div class="buy my-6 mx-8 space-y-6 md:flex md:space-x-10">
+
+        <div class="buyItem mx-auto space-y-2 md:w-[600px] md:mt-6">
+            <img class="cursor-pointer" src="buy2.webp" alt="">
+            <div class="buyInfo">
+                <h1 class="text-3xl text-left font-semibold md:text-[28px]">One Note</h1>
+                <p class="text-left mr-6 my-2 font-semibold md:font-normal">One cross-functional notebook for all your notetaking needs.</p>
+                <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg ">Learn more</span>
+                <span class="font-medium text-blue-700 cursor-pointer text-lg "> ></span>
+            </div>
+        </div>
+
+        <div class="buyItem mx-auto space-y-2 md:w-[600px]">
+            <img class="cursor-pointer" src="buy1.webp" alt="">
+            <div class="buyInfo">
+                <h1 class="text-3xl text-left font-semibold md:text-[28px]">Surface Laptop 4</h1>
+                <p class="text-left mr-6 my-2 font-semibold md:font-normal">Sophisticated style and multitasking speed powered by 12th Gen Intel® Core, with Windows 11.</p>
+                <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg ">Learn more</span>
+                <span class="font-medium text-blue-700 cursor-pointer text-lg "> ></span>
+            </div>
+        </div>
+        
+        <div class="buyItem mx-auto space-y-2 md:w-[600px]">
+            <img class="cursor-pointer" src="buy3.webp" alt="">
+            <div class="buyInfo">
+                <h1 class="text-3xl text-left font-semibold md:text-[28px]">Call of Duty®: Modern Warfare® II</h1>
+                <p class="text-left mr-6 my-2 font-semibold md:font-normal">Welcome to the new era of Call of Duty. Squad up and fight the iconic operators of Task Force 141 with gameplay, advanced AI.</p>
+                <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg ">Learn more</span>
+                <span class="font-medium text-blue-700 cursor-pointer text-lg "> ></span>
+            </div>
+        </div>
+        
+        <div class="buyItem mx-auto space-y-2 md:w-[600px]">
+            <img class="cursor-pointer" src="buy5.webp" alt="">
+            <div class="buyInfo">
+                <h1 class="text-3xl text-left font-semibold md:text-[28px]">Microsoft 365 for business</h1>
+                <p class="text-left mr-6 my-2 font-semibold md:font-normal">Stay a step ahead with powerful apps for productivity, connection and security.</p>
+                <span class="font-medium hover:underline text-blue-700 cursor-pointer md:font-semibold text-lg ">Learn more</span>
+                <span class="font-medium text-blue-700 cursor-pointer text-lg "> ></span>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div class="teams mb-10 z-50 hidden md:block">
+
+        <div class="w-1/3 h-[280px] absolute top-[1135px] left-44 flex flex-col justify-center">
+            <div class="ml-10 flex flex-col">
+                <h1 class=" text-4xl font-semibold">Microsoft 365 Apps </h1>
+                <p class="mt-3 text-lg">Everything you need to achieve more in less time !</p>
+                <div>
+                    <button class="text-white bg-black font-sans px-4 py-3 hover:bg-blue-700 w-44 mt-8 ml-0.5">E&ThinSpace;x&ThinSpace;p&ThinSpace;l&ThinSpace;o&ThinSpace;r&ThinSpace;e&ThinSpace; N&ThinSpace;o&ThinSpace;w ></button>
+                    <button class=" font-sans font-semibold text-xl hover:underline hover:underline-offset-8 ml-5 hover:text-blue-800">Buy Now </button>
+                    <span class="font-medium cursor-pointer text-xl "> ></span>
+                </div>
+            </div>
+        </div>
+        
+        <img class="w-[85%] mx-auto" src="img2.jpg" alt="">
+
+    </div>
+
+
+
+    <div class="follow flex my-8 mx-8 md:mx-20">
+        <h1 class=" text-xl font-semibold md:text-2xl">Follow Microsoft - </h1>
+        <img class="h-9 -mt-1 md:h-10" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Facebook%202x?scl=1" alt="">
+        <img class="h-9 -mt-1 mr-2 md:h-10" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Twitter%202x?scl=1" alt="">
+        <img class="h-9 -mt-1 md:h-10" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/YouTube%202x?scl=1" alt="">
+    </div>
+
+    <script src="microsoft.js"></script>
+</body>
+</html>
+
